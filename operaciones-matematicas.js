@@ -27,3 +27,13 @@ export function aplicarImpuestos(total) {
 export function aplicarDescuento(total) {
   return  total - total * DESCUENTO;
 }
+
+export function aplicarDescuentoPorRol (total, usuario) {
+  if (usuario.rol = "admin") {
+  return total - total * 0.2;
+  }
+  else if (usuario.rol = "usuario") {
+  return total - total * DESCUENTO;
+  }
+  return total;
+  }
