@@ -61,3 +61,26 @@ const usuario02 = crearUsuario("Carlos", ROLES.CLIENTE)
 
 console.log(usuario01)
 console.log(usuario02)
+
+// ***** QUINTO EJERCICIO *****
+
+console.log("\nEJERCICIO 5")
+
+const totalAdmin01 = calcularTotal(25, 4);
+const totalAdminImpuesto = aplicarImpuestos(totalAdmin01);
+const totalAdmin02 = aplicarDescuento(totalAdmin01, usuario01);
+
+console.log("admin:" );
+console.log("Total =", {totalAdmin01});
+console.log("Con impuesto =", {totalAdminImpuesto});
+console.log("Con descuento =", {totalAdmin02});
+
+const totalCliente01 = calcularTotal(50, 3);
+const totalClienteImpuesto = aplicarImpuestos(totalCliente01);
+const totalCliente02 = aplicarDescuento(totalCliente01, usuario02);
+
+console.log("Cliente:" );
+console.log("Total =", {totalCliente01});
+console.log("Con impuesto =", {totalClienteImpuesto});
+console.log("Con descuento =", {totalCliente02});
+
